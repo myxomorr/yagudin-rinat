@@ -5,18 +5,18 @@ using namespace std;
 
 class Author {
 public:
-    Author(const string& name, int birthYear)
+    Author(string name, int birthYear)
         : name(name), birthYear(birthYear) {}
 
-    string getName() const {
+    string getName() {
         return name;
     }
 
-    int getBirthYear() const {
+    int getBirthYear(){
         return birthYear;
     }
 
-    void setName(const string& name) {
+    void setName(string name) {
         this->name = name;
     }
 
@@ -31,22 +31,22 @@ private:
 
 class Book {
 public:
-    Book(const string& title, const Author& author)
+    Book(string title, Author author)
         : title(title), author(author) {}
 
-    string getTitle() const {
+    string getTitle(){
         return title;
     }
 
-    Author getAuthor() const {
+    Author getAuthor(){
         return author;
     }
 
-    void setTitle(const string& title) {
+    void setTitle(string title) {
         this->title = title;
     }
 
-    void setAuthor(const Author& author) {
+    void setAuthor(Author author) {
         this->author = author;
     }
 
