@@ -1,4 +1,4 @@
-#include "AuthorBook.hpp"
+#include "../include/AuthorBook.hpp"
 
 int main() {
     Author author("Федор Достоевскский", 1821);

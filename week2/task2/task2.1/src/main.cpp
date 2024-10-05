@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Student.hpp"
+#include "../include/Student.hpp"
 
 int main() {
     tm birthDate1 = {};

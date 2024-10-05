@@ -1,5 +1,5 @@
 #include <iostream>
-#include "User.hpp"
+#include "../include/User.hpp"
 
 int main(){
     User User1("Ivan", 20);

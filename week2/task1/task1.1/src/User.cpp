@@ -1,4 +1,4 @@
-#include "User.hpp"
+#include "../include/User.hpp"
 
 string User::getName(){
     return name;

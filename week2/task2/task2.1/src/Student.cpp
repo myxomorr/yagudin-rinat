@@ -1,4 +1,4 @@
-#include "Student.hpp"
+#include "../include/Student.hpp"
 #include <iomanip>
 #include <sstream>
 

@@ -1,4 +1,4 @@
-#include "BankAccount.hpp"
+#include "../include/BankAccount.hpp"
 
 BankAccount::BankAccount(string accountNumber) : accountNumber(accountNumber), balance(0.0f) {}
 

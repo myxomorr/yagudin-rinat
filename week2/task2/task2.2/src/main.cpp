@@ -1,5 +1,5 @@
 #include <iostream>
-#include "BankAccount.hpp"
+#include "../include/BankAccount.hpp"
 
 int main() {
     BankAccount account("1111");
