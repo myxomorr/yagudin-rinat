@@ -1,5 +1,5 @@
 #include <iostream>
-#include "task1.2.hpp"
+#include "Octagon.hpp"
 
 int main(){
     Octagon Octagon;
