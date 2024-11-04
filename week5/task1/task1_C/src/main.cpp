@@ -8,9 +8,12 @@ using namespace std;
 
 
 int main() {
-    string filename;
-    cout << "Введите имя файла: ";
-    getline(cin, filename);
+    string filename;;
+    string outputFilename;
+    cout << "Введите имя файла для расчета энтропии: ";
+    cin >> filename;
+    cout << "Введите имя файла для записи результата: ";
+    cin >> outputFilename;
 
     // Чтение содержимого файла в строку
     string input = readFileToString(filename);
@@ -24,11 +27,11 @@ int main() {
     double entropy = calculateShannonEntropy(input); // Расчет энтропии
 
     // Запись результата в файл
-    ofstream outputFile("result.txt");
+    ofstream outputFile(outputFilename);
     if (outputFile.is_open()) {
-        outputFile << "Энтропия файла " << filename << ": " <<formatDouble(entropy) << endl;
+        outputFile << entropy << endl;
         outputFile.close();
-        cout << "Результат записан в файл 'result.txt'." << endl;
+        cout << "Результат записан в файл: " << outputFilename << endl;
     } else {
         cout << "Ошибка: не удалось открыть файл для записи." << endl;
     }

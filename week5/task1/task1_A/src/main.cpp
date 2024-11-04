@@ -4,7 +4,9 @@
 using namespace std;
 
 int main() {
-    string filename = "test.txt";
+    string filename;;
+    cout << "Введите имя файла: ";
+    cin >> filename;
 
     // Вызов функции для чтения файла
     readFile(filename);

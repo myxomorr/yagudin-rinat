@@ -6,9 +6,9 @@
 using namespace std;
 
 int main() {
-    string filename;
+    string filename;;
     cout << "Введите имя файла: ";
-    getline(cin, filename);
+    cin >> filename;
     
     // Чтение содержимого файла в строку
     string input = readFileToString(filename);
