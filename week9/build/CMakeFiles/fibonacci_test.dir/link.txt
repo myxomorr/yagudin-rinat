@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/fibonacci_test.dir/tests/fibonacci_test.cpp.o  -o fibonacci_test  libfibonacci.a lib/libgtest_main.a lib/libgtest.a -lpthread 

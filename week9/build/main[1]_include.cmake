@@ -1,5 +1,0 @@
-if(EXISTS "/workspaces/yagudin-rinat/week9/build/main[1]_tests.cmake")
-  include("/workspaces/yagudin-rinat/week9/build/main[1]_tests.cmake")
-else()
-  add_test(main_NOT_BUILT main_NOT_BUILT)
-endif()

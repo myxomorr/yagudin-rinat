@@ -1,1 +1,0 @@
-/usr/bin/c++    -rdynamic CMakeFiles/run_tests.dir/fibonacci_test.cpp.o  -o run_tests  -lgtest_main ../libfibonacci.a 
