@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/cmake-example-test.dir/tests/fibonacci_test.cpp.o CMakeFiles/cmake-example-test.dir/src/fibonacci.cpp.o  -o cmake-example-test  lib/libgtest_main.a lib/libgtest.a -lpthread 

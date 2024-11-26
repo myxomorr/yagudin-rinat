@@ -1,0 +1,5 @@
+if(EXISTS "/workspaces/yagudin-rinat/week9/build/fibonacci_test[1]_tests.cmake")
+  include("/workspaces/yagudin-rinat/week9/build/fibonacci_test[1]_tests.cmake")
+else()
+  add_test(fibonacci_test_NOT_BUILT fibonacci_test_NOT_BUILT)
+endif()

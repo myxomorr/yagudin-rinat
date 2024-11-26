@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/cmake-example.dir/src/main.cpp.o CMakeFiles/cmake-example.dir/src/fibonacci.cpp.o  -o cmake-example 

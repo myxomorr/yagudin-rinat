@@ -1,0 +1,5 @@
+if(EXISTS "/workspaces/yagudin-rinat/week9/build/cmake-example-test[1]_tests.cmake")
+  include("/workspaces/yagudin-rinat/week9/build/cmake-example-test[1]_tests.cmake")
+else()
+  add_test(cmake-example-test_NOT_BUILT cmake-example-test_NOT_BUILT)
+endif()
