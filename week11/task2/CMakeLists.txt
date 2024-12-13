@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 2.8)
 
-project(trapezoid_area)
+project(Entropy calculator)
 
 set(SOURCE_EXE src/main.cpp)
 
