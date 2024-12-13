@@ -2,3 +2,4 @@
 **/obj/**
 .vscode
 build/
+large_file.txt
