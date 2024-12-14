@@ -24,13 +24,3 @@ WORKDIR /workspace
 # Копируем все содержимое из week13 в контейнер
 COPY . /workspace
 
-# Сборка task1
-WORKDIR /workspace/task1
-RUN make
-
-# Сборка task2
-WORKDIR /workspace/task2
-RUN make
-
-# Команда по умолчанию для контейнера
-CMD ["bash"]
