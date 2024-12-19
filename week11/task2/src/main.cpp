@@ -3,7 +3,9 @@
 #include "../include/entropy_calculator.hpp"
 
 int main() {
-    const std::string filename = "src/large_file.txt";
+    std::string filename;
+    std::cout << "Введите путь к файлу: ";
+    std::getline(std::cin, filename);
 
     // Вычисление энтропии в параллельном режиме
     double entropy = calculate_entropy_parallel(filename);
