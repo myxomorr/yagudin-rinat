@@ -6,13 +6,11 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(JSON_Install OFF CACHE INTERNAL "")
 
-# Build main program
 include_directories("include")
 add_library(fibonacci STATIC src/fibonacci.cpp)
 add_executable(main src/main.cpp)
 target_link_libraries(main fibonacci)
 
-# Build GoogleTests
 include(FetchContent)
 FetchContent_Declare(
   googletest
