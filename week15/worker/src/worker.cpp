@@ -83,7 +83,6 @@ int main() {
 
         generateCombinations(length, startIdx, endIdx, charset, targetHash, sock);
 
-        // Проверка на сообщение "STOP".
         if (std::string(task_buffer).find("STOP") != std::string::npos) {
             std::cout << "Worker stopping." << std::endl;
             break;

@@ -44,7 +44,6 @@ void handleWorker(int socket, int workerId, const std::string &charset, int maxL
 
                 cv.notify_all();
 
-                // Завершаем соединение с мастер сервером
                 close(socket);
                 return;
             }
