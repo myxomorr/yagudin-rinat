@@ -59,7 +59,11 @@ int main() {
 
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_port = htons(PORT);
+<<<<<<< HEAD
     serv_addr.sin_addr.s_addr = inet_addr("192.168.1.1");
+=======
+    serv_addr.sin_addr.s_addr = inet_addr("127.0.0.1");
+>>>>>>> 2a75cc113b3399c4e947e1e191d11a9bda31b44d
 
     if (connect(sock, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0) {
         perror("Connection failed");
