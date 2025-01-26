@@ -4,11 +4,12 @@
 #include <unistd.h>
 #include <openssl/md5.h>
 #include <sys/socket.h>
+#include <arpa/inet.h>
 #include <netinet/in.h>
 #include <sstream>
 #include <cmath>
 
-#define PORT 8080
+#define PORT 8081
 
 const std::string targetHash = "8139bfeb4b17207735b4324a38ca2b10";
 
@@ -58,7 +59,7 @@ int main() {
 
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_port = htons(PORT);
-    serv_addr.sin_addr.s_addr = INADDR_ANY;
+    serv_addr.sin_addr.s_addr = inet_addr("192.168.1.1");
 
     if (connect(sock, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0) {
         perror("Connection failed");
